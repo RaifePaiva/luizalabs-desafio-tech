@@ -10,6 +10,13 @@ A aplicação deve:
  - Processar os dados para transformá-los em um JSON normalizado.
  - Suportar filtros por ID de pedido e intervalo de data.
 
+
+## Configuração do Projeto:
+
+- Java 17
+- Gradle 8.10 ou superior
+- Quarkus 3.5
+
 ## Estrutura do Projeto: 
 
 - Neste projeto foi utilizado uma arquitetura simples em camadas, separando as responsabilidades por camada para facilitar a escrita de testes.
@@ -45,6 +52,24 @@ A aplicação deve:
 └── README.md
 
 ````
+
+## Iniciar aplicação:
+
+Para iniciar a aplicação quarkus, execute o comando abaixo:
+
+```shell script
+./gradlew quarkusDev
+```
+
+## Executar testes
+
+Para executar os testes, execute o comando abaixo:
+
+```shell script
+./gradlew test
+```
+
+> **_NOTE:_**  Será disponibilizado acesso a rota, atraves do host:  <http://localhost:8080>.
 
 ## Swagger:
 
@@ -109,35 +134,10 @@ A aplicação deve:
 ]
 ````
 
-## Configuração do Projeto:
-
- - Java 17
- - Gradle 8.10 ou superior
- - Quarkus 3.5
-
 ## Sobre o Quarkus
 
 A utilização do framework foi determinada com base em sua simplicidade ao declarar os recursos e abstrações para este desafio,
 podendo assim focar no desenvolvimento da lógica de negócio e não com a infra.
-
-## Iniciar aplicação:
-
-Para iniciar a aplicação quarkus, execute o comando abaixo:
-
-```shell script
-./gradlew quarkusDev
-```
-
-## Executar testes
-
-Para executar os testes, execute o comando abaixo:
-
-```shell script
-./gradlew test
-```
-
-> **_NOTE:_**  Será disponibilizado acesso a rota, atraves do host:  <http://localhost:8080>.
-
 
 ## Related Guides
 
